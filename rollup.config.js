@@ -12,12 +12,12 @@ export default [
       {
         file: packageJson.main,
         format: "cjs",
-        sourcemap: true,
+        // sourcemap: true,
       },
       {
         file: packageJson.module,
         format: "esm",
-        sourcemap: true,
+        // sourcemap: true,
       },
     ],
     plugins: [
@@ -25,6 +25,7 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
     ],
+    external: ['react', 'react-dom']
   },
   {
     input: "dist/esm/index.d.ts",
