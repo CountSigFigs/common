@@ -3,14 +3,18 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/CountSigFigs"
   },
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "common core component repo example",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "pub": "npm version patch --force && npm publish"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.9",
     "@rollup/plugin-commonjs": "^23.0.0",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@rollup/plugin-typescript": "^8.5.0",
