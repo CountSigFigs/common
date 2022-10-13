@@ -1,9 +1,15 @@
 import React from 'react';
 import Button, { ButtonProps as MuiButtonProps} from '@mui/material/Button';
 
-const MuiButton: React.FC<MuiButtonProps>= ({ children, ...props }) => (
+type ButtonBaseProps = Pick<MuiButtonProps, "variant" | "size" | "color" | "children">;
+
+type ButtonProps = ButtonBaseProps & {
+    label: string
+};
+
+const MuiButton: React.FC<ButtonProps>= ({ label, ...props }) => (
     <Button {...props}>
-        {children}
+        {label}
     </Button>
 );
 
