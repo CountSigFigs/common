@@ -3,11 +3,11 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/CountSigFigs"
   },
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "common core component repo example",
   "scripts": {
     "rollup": "rollup -c",
-    "pub": "npm version patch --force && npm publish rm -R ./dist"
+    "pub": "npm version patch --force && npm publish"
   },
   "author": "",
   "license": "ISC",
