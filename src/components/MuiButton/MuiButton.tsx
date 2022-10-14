@@ -1,7 +1,13 @@
 import React from 'react';
 import Button, { ButtonProps as MuiButtonProps} from '@mui/material/Button';
 
-type ButtonBaseProps = Pick<MuiButtonProps, "variant" | "size" | "color" | "children">;
+type ButtonBaseProps = Pick<MuiButtonProps, 
+    "variant" |
+    "size" | 
+    "color" | 
+    "children" | 
+    "fullWidth"
+>;
 
 type ButtonProps = ButtonBaseProps & {
     label: string
