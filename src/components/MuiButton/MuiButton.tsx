@@ -6,7 +6,8 @@ type ButtonBaseProps = Pick<MuiButtonProps,
     "size" | 
     "color" | 
     "children" | 
-    "fullWidth"
+    "fullWidth" |
+    "disabled"
 >;
 
 type ButtonProps = ButtonBaseProps & {
