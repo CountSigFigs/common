@@ -1,9 +1,7 @@
 name: "publish"
-
 on:
   release:
     types: [created]
-
 jobs:
     build:
     runs-on: ubuntu-latest
@@ -23,6 +21,5 @@ jobs:
     # Copy files to dist dir (package.json is required)
     - run: cp ./package.json dist && cp ./README.md dist
     - run: npm publish
-
     env:
       NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
