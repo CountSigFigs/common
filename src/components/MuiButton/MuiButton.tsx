@@ -2,12 +2,12 @@ import React from 'react';
 import Button, { ButtonProps as MuiButtonProps} from '@mui/material/Button';
 
 type ButtonBaseProps = Pick<MuiButtonProps, 
+    "disabled" |
     "variant" |
     "size" | 
     "color" | 
     "children" | 
-    "fullWidth" |
-    "disabled"
+    "fullWidth"
 >;
 
 type ButtonProps = ButtonBaseProps & {

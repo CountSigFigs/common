@@ -5,7 +5,7 @@ import Stack from "@mui/material/Stack";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-    title: "ReactComponentLibrary/MuiButton",
+    title: "common-core/MuiButton",
     component: MuiButton,
 } as ComponentMeta<typeof MuiButton>;
 
@@ -22,6 +22,7 @@ export const Variants: ComponentStory<typeof MuiButton> = () => (
         <MuiButton variant="text" label="Text Button" />
         <MuiButton variant="contained" label="Contained Button" />
         <MuiButton variant="outlined" label="Outlined Button" />
+        <MuiButton variant="outlined" label="Disabled outline button" disabled />
     </Stack>
 );
 
