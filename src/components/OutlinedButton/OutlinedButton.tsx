@@ -16,3 +16,5 @@ type ButtonProps = ButtonBaseProps & {
 const OutlinedButton: React.FC<ButtonProps> = ({ label }) => (
    <MuiButton label={label} variant='outlined' />
 );
+
+export default OutlinedButton;
