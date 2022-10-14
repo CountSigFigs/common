@@ -6,7 +6,7 @@
   "version": "0.0.15",
   "description": "common core component repo example",
   "scripts": {
-    "publish": "npm version patch --force && npm publish",
+    "publish": "npm publish",
     "build": "rollup -c",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
