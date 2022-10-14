@@ -31,6 +31,9 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
+      - run: npm run build
+      # Copy files to dist dir (package.json is required)
+      - run: cp ./package.json dist && cp ./README.md dist
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
