@@ -17,6 +17,14 @@ Sandbox.args = {
     label: "Click me!",
 };
 
+export const Variants: ComponentStory<typeof MuiButton> = () => (
+    <Stack spacing={2} maxWidth={300}>
+        <MuiButton variant="text" label="Text Button" />
+        <MuiButton variant="contained" label="Contained Button" />
+        <MuiButton variant="outlined" label="Outlined Button" />
+    </Stack>
+);
+
 export const Colors: ComponentStory<typeof MuiButton> = () => (
     <Stack spacing={2} maxWidth={300}>
         <MuiButton variant="contained" label="Primary" />
@@ -24,4 +32,12 @@ export const Colors: ComponentStory<typeof MuiButton> = () => (
         <MuiButton variant="contained" color="success" label="Success" />
         <MuiButton variant="contained" color="error" label="Error" />
     </Stack>
-)
+);
+
+export const Sizes: ComponentStory<typeof MuiButton> = () => (
+    <Stack spacing={2} maxWidth={300}>
+        <MuiButton variant="contained" size="small" label="Small" />
+        <MuiButton variant="contained" size="medium" label="Medium" />
+        <MuiButton variant="contained" size="large" label="Large" />
+    </Stack>
+);
