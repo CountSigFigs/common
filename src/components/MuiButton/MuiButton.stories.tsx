@@ -16,6 +16,9 @@ export const Sandbox = Template.bind({});
 Sandbox.args = {
     label: "Click me!",
 };
+Sandbox.parameters = {
+    chromatic: { viewports: [320, 1200] },
+};
 
 export const Variants: ComponentStory<typeof MuiButton> = () => (
     <Stack spacing={2} maxWidth={300}>
